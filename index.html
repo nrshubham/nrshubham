@@ -66,7 +66,9 @@
 .demo-card-event > .mdl-card__actions > .mdl-button {
   color: #fff;
 }
-
+.demo-list-icon {
+  width: 300px;
+}
 </style>
 </head>
 
@@ -74,8 +76,22 @@
 <div class="container">
     
     <div class="container-fluid">
+            
+		<div class="row middle-xs" style="margin-top: 20px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="position:fixed; z-index:1000;"> 
+                <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+                  <i class="material-icons mdl-list__item-icon">menu</i>
+                </button>
+            </div>    
+    	</div>
         
-		<div class="row middle-xs">
+        <div class="row middle-xs" style=" height:50px;">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>    
+    	</div>
+        
+        <div class="row middle-xs" style="margin-top: 10px;">
         	 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
                 <div class="box demo-card-image mdl-card mdl-shadow--2dp" style="background: url('images/me.png') center / cover;">
                   <div class="mdl-card__title mdl-card--expand"></div>
@@ -160,6 +176,35 @@
                     </a>
                   </div>
                 </div>
+            </div>
+        </div>
+        
+        <div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                
+                <ul class="demo-list-icon mdl-list">
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+					<h4>Contact Information</h4>
+                    </span>
+                  </li>
+  				  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">person</i>
+                    Shubham Naik
+                  </span>
+                  </li><li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">mail</i>
+                    nrshubham@gmail.com
+                  </span>
+                  </li>
+                  <li class="mdl-list__item">
+                    <span class="mdl-list__item-primary-content">
+                    <i class="material-icons mdl-list__item-icon">phone</i>
+                    <a href="tel: 9882-545-112">+91 9882-545-112</a>
+                  </span>
+                  </li>
+                </ul>
             </div>
         </div>
 
