@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="icons/font-awesome-4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="icons/material-icons.css">
 <link rel="stylesheet" href="mdl/material.min.css">
 <link rel="stylesheet" href="css/flexboxgrid.css">
 <script defer src="mdl/material.min.js"></script>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 <title>Shubham Naik</title>
 <style>
 .demo-card-wide.mdl-card {
@@ -69,6 +71,199 @@
 .demo-list-icon {
   width: 300px;
 }
+html{
+	background:url(images/.jpg) center / cover;
+}
+.menu {
+  filter: url("#goo");
+}
+
+.menu-item, .menu-open-button {
+  background: #3F51B5;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  top: 20px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+.menu-open {
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background: white;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -12.5px;
+  margin-top: -1.5px;
+  transition: transform 200ms;
+}
+
+.hamburger-1 {
+  transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+  transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+  transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .hamburger-1 {
+  transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.menu-open:checked + .menu-open-button .hamburger-2 {
+  transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.menu-open:checked + .menu-open-button .hamburger-3 {
+  transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+  position: absolute;
+  left: 50%;
+  margin-left: -190px;
+  margin-top: 100px;
+  padding-top: 120px;
+  padding-left: 190px;
+  width: 380px;
+  height: 230px;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: left;
+}
+.menu-item:i {
+  color: white;
+}
+.menu-item:hover {
+  color: #3F51B5;
+  background-color: white;
+}
+.menu-item+material-icon:hover{
+	color: #3F51B5;
+}
+.menu-item:nth-child(3) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(4) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(5) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(6) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(7) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(8) {
+  transition-duration: 180ms;
+}
+.menu-item:nth-child(9) {
+  transition-duration: 180ms;
+}
+
+.menu-open-button {
+  z-index: 2;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-duration: 400ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+  cursor: pointer;
+}
+
+.menu-open-button:hover {
+  transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+  transition-timing-function: linear;
+  transition-duration: 200ms;
+  transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+  transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+.menu-open:checked ~ .menu-item:nth-child(3) {
+  transition-duration: 180ms;
+  transform: translate3d(0.08361px, -104.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(4) {
+  transition-duration: 280ms;
+  transform: translate3d(90.9466px, -52.47586px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(5) {
+  transition-duration: 380ms;
+  transform: translate3d(90.9466px, 52.47586px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(6) {
+  transition-duration: 480ms;
+  transform: translate3d(0.08361px, 104.99997px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(7) {
+  transition-duration: 580ms;
+  transform: translate3d(-90.86291px, 52.62064px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(8) {
+  transition-duration: 680ms;
+  transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+.menu-open:checked ~ .menu-item:nth-child(9) {
+  transition-duration: 780ms;
+  transform: translate3d(-0.25084px, -104.9997px, 0);
+}
+.md-chip {
+  display: inline-block;
+  border-radius: 42px;
+  padding: 0;
+  height: 42px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-transition: .2s ease-out;
+          transition: .2s ease-out;
+}
+
+.md-chip-img {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  overflow: hidden;
+  float: left;
+}
+
+.md-chip-img .md-chip-span {
+  display: block;
+  height: 42px;
+}
+
+.md-chip-img img {
+  -webkit-transform: translate(-50%);
+  margin-left: 21px;
+  height: 42px;
+}
+
+.md-chip-text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  height: 42px;
+  float: left;
+  padding: 12px 18px 12px 10px;
+  color: #3F51B5;
+}
 </style>
 </head>
 
@@ -98,6 +293,17 @@
                 </div>
             </div>    
     	</div>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="md-chip">
+                <div class="md-chip-img">
+                  <img src="images/Fabrica-Favicon.png"/>
+                </div>
+                <span class="md-chip-text">Fabrica</span>
+              </div>
+            </div>
+        </div>
     
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-5">
@@ -127,6 +333,17 @@
             </div>
         </div>
     
+    	<div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <div class="md-chip">
+                <div class="md-chip-img">
+                  <img src="images/lal.png"/>
+                </div>
+                <span class="md-chip-text">NIT LIBRARY ANDROID APP</span>
+              </div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">            
                 <div class="box demo-card-event mdl-card mdl-shadow--2dp">
@@ -165,35 +382,44 @@
                 </div>
             </div>
         </div>
+    
+		<nav class="menu">
+          <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+          <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+          </label>
+          
+          <a href="#" class="menu-item"> <i class="fa fa-arrow-up"></i> </a>
+          <a href="#" class="menu-item"> <i class="fa fa-github"></i> </a>
+          <a href="#" class="menu-item"> <i class="fa fa-facebook"></i> </a>
+          <a href="#" class="menu-item"> <i class="fa fa-heart"></i> </a>
+          <a href="#" class="menu-item"> <i class="fa fa-instagram"></i> </a>
+          <a href="#" class="menu-item"> <i class="fa fa-envelope"></i> </a>   
+        </nav>
         
-        <div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                
-                <ul class="demo-list-icon mdl-list">
-                  <li class="mdl-list__item">
-                    <span class="mdl-list__item-primary-content">
-					<h4>Contact Information</h4>
-                    </span>
-                  </li>
-  				  <li class="mdl-list__item">
-                    <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-icon">person</i>
-                    Shubham Naik
-                  </span>
-                  </li><li class="mdl-list__item">
-                    <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-icon">mail</i>
-                    nrshubham@gmail.com
-                  </span>
-                  </li>
-                  <li class="mdl-list__item">
-                    <span class="mdl-list__item-primary-content">
-                    <i class="material-icons mdl-list__item-icon">phone</i>
-                    <a href="tel: 9882-545-112">+91 9882-545-112</a>
-                  </span>
-                  </li>
-                </ul>
-            </div>
-        </div>
+        
+        <!-- filters -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="shadowed-goo">
+                  
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                  <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                  <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                  <feComposite in2="shadow" in="goo" result="goo" />
+                  <feComposite in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feComposite in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+            </defs>
+        </svg>
 
     </div>    
 
